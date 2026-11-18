@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es">
+
+ <!-- Configuración de la página -->
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Foodily - Jugos y batidos naturales
+  </title>
+  <!-- Favicon -->
+  <link href="favicon.ico" rel="icon" type="image/x-icon"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&amp;family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+  <!-- FontAwesome CDN para íconos -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+  <!-- Estilos CSS -->
+  <link href="assets/css/styles.css" rel="stylesheet"/>
+ </head>
+
+
+ <!-- Contenido de la página -->
+ <body>
+  <!-- BARRA SUPERIOR (TOP BAR) -->
+  <!-- Barra de contacto: enlaces mailto y tel -->
+  <header id="top-bar">
+   <div class="container">
+    <div class="top-bar-flex">
+     <div class="top-contacto">
+      <a href="mailto:foodily@gmail.com?subject=Consulta%20Foodily">
+       <i class="fa-solid fa-envelope">
+       </i>
+       foodily@gmail.com
+      </a>
+      <a href="tel:+51999666123">
+       <i class="fa-solid fa-phone">
+       </i>
+       (+51) 999 666 123
+      </a>
+     </div>
+     <!-- Redes sociales, se abren en otra pestaña para no salir de la pagina -->
+     <div class="top-rs">
+      <a aria-label="Facebook · referencia externa" href="https://www.facebook.com/batidosnaturales/" rel="noopener noreferrer" target="_blank">
+       <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a aria-label="Instagram · referencia externa" href="https://www.instagram.com/batidosnaturales/" rel="noopener noreferrer" target="_blank">
+       <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a aria-label="WhatsApp" href="https://wa.me/51999666123" rel="noopener noreferrer" target="_blank">
+       <i class="fa-brands fa-whatsapp"></i>
+      </a>
+     </div>
+    </div>
+   </div>
+  </header>
+  <!-- SECCION 1: HEADER Y BARRA DE NAVEGACION -->
+  <!-- Cabecera principal y menú de navegación -->
+  <header id="cabecera" class="padding-xs">
+    <div class="container nav-bar">
+        <a class="logo-ancho" href="index.html">
+            <img class="img-fluid" src="assets/img/logo.png" alt="Foodily · Inicio">
+        </a>
+        <button class="nav-menu-toggle" type="button" aria-label="Abrir menú de navegación"
+                aria-controls="nav-menu" aria-expanded="false">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            <span>Menú</span>
+        </button>
+        <nav class="nav-menu" id="nav-menu" aria-label="Navegación principal">
+          <ul>
+            <li><a href="index.html" aria-current="page">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+    </div>
+</header>
+  <!-- Contenido principal -->
+  <main id="contenido" tabindex="-1">
+   <!-- SECCION 2: BANNER PRINCIPAL (HERO) -->
+   <section class="hero padding-xl" id="inicio">
+    <div class="hero-content slide-in-left">
+     <h1>
+      <span class="first-letter">
+       Batido
+      </span>
+      <span class="second-letter">
+       Saludable
+      </span>
+     </h1>
+     <p>
+      Disfruta bebidas preparadas con frutas frescas y sabores naturales para acompa&ntilde;ar diferentes momentos del d&iacute;a.
+     </p>
+     <a class="btn-primary" href="servicios.html#bebidas">
+      Ver bebidas
+     </a>
+    </div>
+    <div class="hero-image">
+     <img alt="Batido verde saludable" class="img-fluid" src="assets/img/hero-juice.png"/>
+    </div>
+    <!-- Imagen decorativa de la parte de abajo del banner, por eso el alt va vacio -->
+    <img alt="" class="separador-portada" src="assets/img/hero-divider.png"/>
+   </section>
+   <!-- SECCION 3: PRESENTACION / ABOUT US -->
+   <section class="about padding-xl" id="about">
+    <div class="about-container row">
+     <div class="about-img">
+      <img alt="Jugos preparados con frutas frescas" class="img-fluid" src="assets/img/juice-about.png"/>
+     </div>
+     <div class="about-text">
+      <span class="title-tag">
+       Bebidas naturales
+      </span>
+      <h2>
+       Jugos de frutas
+       <span class="highlight">
+        frescas
+       </span>
+      </h2>
+      <p>
+       En Foodily ofrecemos jugos y batidos preparados con frutas seleccionadas. Nuestra propuesta combina frescura, sabor y diferentes opciones para nuestros clientes.
+      </p>
+      <a class="btn-primary" href="servicios.html#bebidas">
+       Ver bebidas
+      </a>
+     </div>
+    </div>
+   </section>
+   <!-- SECCION 4: SERVICIOS / BEVERAGE CATEGORIES -->
+   <section class="services padding-xl" id="beverage">
+    <div class="section-title">
+     <span class="title-tag">
+      Opciones para ti
+     </span>
+     <h2>
+      Nuestras bebidas m&aacute;s solicitadas
+     </h2>
+    </div>
+    <!-- Tarjetas de bebidas, cada una con su imagen, nombre e ingredientes -->
+    <div class="cards-container row">
+     <article class="card">
+      <img alt="Batido de fresa" class="img-fluid" src="assets/img/beverage-1.jpg"/>
+      <h3>
+       Batido de fresa
+      </h3>
+      <span>
+       Fresa, leche y vainilla
+      </span>
+     </article>
+     <article class="card">
+      <img alt="Jugo tropical" class="img-fluid" src="assets/img/beverage-2.jpg"/>
+      <h3>
+       Jugo tropical
+      </h3>
+      <span>
+       Mango, naranja y maracuy&aacute;
+      </span>
+     </article>
+     <article class="card">
+      <img alt="Batido verde" class="img-fluid" src="assets/img/beverage-3.jpg"/>
+      <h3>
+       Batido verde
+      </h3>
+      <span>
+       Manzana, pepino y espinaca
+      </span>
+     </article>
+     <article class="card">
+      <img alt="Jugo de pi&ntilde;a" class="img-fluid" src="assets/img/beverage-4.jpg"/>
+      <h3>
+       Jugo de pi&ntilde;a
+      </h3>
+      <span>
+       Pi&ntilde;a, naranja y agua
+      </span>
+     </article>
+    </div>
+   </section>
+   <!-- TABLA NUTRICIONAL Y PRECIOS -->
+   <section class="table-section padding-xl" id="tabla">
+    <div class="section-title">
+     <span class="title-tag">
+      Carta de bebidas
+     </span>
+     <h2>
+      Tama&ntilde;os, ingredientes y precios
+     </h2>
+    </div>
+    <!-- El div que envuelve la tabla permite deslizarla de lado en pantallas chicas -->
+    <div class="table-container" tabindex="0" role="region" aria-label="Carta de bebidas desplazable">
+     
+
+<table class="tbl-tarifas">
+    <!-- Encabezados de la tabla -->
+    <thead>
+        <tr>
+            <th scope="col">Bebida</th>
+            <th scope="col">Tamaño</th>
+            <th scope="col">Ingredientes</th>
+            <th scope="col">Precio</th>
+        </tr>
+    </thead>
+
+    <!-- Datos de las bebidas -->
+    <tbody>
+        <tr>
+            <td>Batido de Fresa</td>
+            <td>500 ml</td>
+            <td>Fresa, leche y vainilla</td>
+            <td>S/ 12.00</td>
+        </tr>
+
+        <tr>
+            <td>Jugo Tropical</td>
+            <td>500 ml</td>
+            <td>Mango, naranja y maracuyá</td>
+            <td>S/ 13.00</td>
+        </tr>
+
+        <tr>
+            <td>Batido Verde</td>
+            <td>500 ml</td>
+            <td>Manzana, pepino y espinaca</td>
+            <td>S/ 14.00</td>
+        </tr>
+
+        <tr>
+            <td>Jugo de Piña</td>
+            <td>500 ml</td>
+            <td>Piña, naranja y agua</td>
+            <td>S/ 10.00</td>
+        </tr>
+
+        <!-- Quinto registro agregado para cumplir el APF3 -->
+        <tr>
+            <td>Jugo de Naranja</td>
+            <td>500 ml</td>
+            <td>Naranja natural y agua</td>
+            <td>S/ 9.00</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr><td colspan="4">Precios referenciales en soles.</td></tr>
+    </tfoot>
+</table>
+
+
+    </div>
+   </section>
+   <!-- Artículos promocionales en Flexbox, como en el sitio de clase -->
+   <section class="services padding-xl" id="promociones">
+    <div class="section-title"><h2>Promociones de la carta</h2></div>
+    <div class="promocion-flex row">
+     <article>
+      <h3>Dúo tropical</h3>
+      <p>Un jugo tropical y un jugo de piña de 500 ml cada uno por S/ 21.00. Precio de demostración.</p>
+      <a href="#tabla">Ver la carta</a>
+     </article>
+     <article>
+      <h3>Batidos para compartir</h3>
+      <p>Un batido de fresa y un batido verde de 500 ml cada uno por S/ 24.00. Precio de demostración.</p>
+      <a href="contacto.html#formulario">Consultar por una reserva</a>
+     </article>
+    </div>
+   </section>
+   <!-- SECCION MULTIMEDIA (VIDEOS) -->
+   <section class="media-section padding-xl" id="multimedia">
+    <div class="section-title">
+     <span class="title-tag">
+      Multimedia
+     </span>
+     <h2>
+      Conoce nuestra preparaci&oacute;n
+     </h2>
+    </div>
+    <div class="media-container row">
+     <!-- Video MP4 Local (≤ 4MB) -->
+     <div class="media-box">
+      <h3>
+       Receta de batido verde
+      </h3>
+      <!-- El video se reproduce automáticamente, en silencio y en bucle. También permite usar los controles. -->
+      
+    
+<video class="video-fluid"
+       controls
+       autoplay
+       playsinline
+       loop
+       muted
+       poster="assets/img/recipe-main.png"
+       preload="metadata">
+
+    <source src="assets/videos/preparacion.mp4" type="video/mp4">
+
+    Tu navegador no admite la reproducción de videos en formato MP4.
+
+</video>
+
+
+     </div>
+     <!-- Video de YouTube via iframe -->
+     <div class="media-box">
+      <h3>
+       Batido de fresa paso a paso
+      </h3>
+      <!-- Se usa el enlace embed de YouTube para que el video se vea dentro de la pagina -->
+      
+
+<iframe
+    src="https://www.youtube.com/embed/tE8OA1b2Av4"
+    title="Receta de batido de fresa en YouTube"
+    allowfullscreen
+    loading="lazy">
+</iframe>
+
+
+      <p>
+       Receta en video.
+       <a href="https://www.youtube.com/watch?v=tE8OA1b2Av4" rel="noopener noreferrer" target="_blank">
+        Ver en YouTube
+       </a>
+      </p>
+     </div>
+    </div>
+   </section>
+   <!-- SECCION 5: RECETA DE BATIDO VERDE -->
+   <section class="recipe-section padding-xl" id="recipe">
+    <div class="section-title">
+     <span class="title-tag">
+      F&aacute;cil de preparar
+     </span>
+     <h2>
+      Receta de batido verde
+     </h2>
+    </div>
+    <!-- Tres columnas: ingredientes a los lados y la imagen del batido al centro -->
+    <div class="recipe-container row">
+     <div class="recipe-column">
+      <article class="recipe-block">
+       <img alt="Pepino" class="img-fluid" src="assets/img/recipe-cucumber.png"/>
+       <div>
+        <h3>
+         Pepino
+        </h3>
+        <p>
+         Aporta un sabor fresco y una textura ligera al batido.
+        </p>
+       </div>
+      </article>
+      <article class="recipe-block">
+       <img alt="Manzana verde" class="img-fluid" src="assets/img/recipe-apple.png"/>
+       <div>
+        <h3>
+         Manzana
+        </h3>
+        <p>
+         A&ntilde;ade un sabor dulce y combina bien con los ingredientes verdes.
+        </p>
+       </div>
+      </article>
+     </div>
+     <div class="recipe-center-image">
+      <img alt="Batido verde de la receta" class="img-fluid" src="assets/img/recipe-main.png"/>
+     </div>
+     <div class="recipe-column">
+      <article class="recipe-block">
+       <img alt="Lim&oacute;n" class="img-fluid" src="assets/img/recipe-lemon.png"/>
+       <div>
+        <h3>
+         Lim&oacute;n
+        </h3>
+        <p>
+         Agrega un toque c&iacute;trico y ayuda a equilibrar los sabores.
+        </p>
+       </div>
+      </article>
+      <article class="recipe-block">
+       <img alt="Vaso de agua fresca" class="img-fluid" src="assets/img/recipe-water.png"/>
+       <div>
+        <h3>
+         Agua fresca
+        </h3>
+        <p>
+         Permite licuar los ingredientes y obtener la consistencia deseada.
+        </p>
+       </div>
+      </article>
+     </div>
+    </div>
+   </section>
+   <!-- SECCION 6: GALERIA DE PRODUCTOS -->
+   <section class="gallery padding-xl" id="galeria">
+    <div class="section-title">
+     <h2>
+      Nuestra galer&iacute;a
+     </h2>
+    </div>
+    <!-- Las imagenes bajan a otra fila cuando ya no entran en el ancho -->
+    <div class="gallery-container row">
+     <div class="gallery-item">
+      <img alt="Variedad de jugos naturales" class="img-fluid" src="assets/img/gallery-1.jpg"/>
+     </div>
+     <div class="gallery-item">
+      <img alt="Batidos de frutos rojos" class="img-fluid" src="assets/img/gallery-2.jpg"/>
+     </div>
+     <div class="gallery-item">
+      <img alt="Jugos de frutas tropicales" class="img-fluid" src="assets/img/gallery-3.jpg"/>
+     </div>
+     <div class="gallery-item">
+      <img alt="Ingredientes naturales para batido verde" class="img-fluid" src="assets/img/gallery-4.jpg"/>
+     </div>
+    </div>
+   </section>
+   <!-- SECCION 7: TESTIMONIOS -->
+   <section class="testimonials padding-xl" id="testimonios">
+    <div class="section-title">
+     <span class="title-tag">
+      Testimonio
+     </span>
+     <h2>
+      Lo que dicen nuestros clientes
+     </h2>
+    </div>
+    <div class="cards-container row">
+     <blockquote class="testimonial-card">
+      <p>
+       &ldquo;Las bebidas tienen un sabor agradable y se sienten frescas. Me gust&oacute; encontrar varias opciones de frutas.&rdquo;
+      </p>
+      <cite>
+       Mar&iacute;a Gonz&aacute;lez
+       <span>
+        - Cliente
+       </span>
+      </cite>
+     </blockquote>
+    </div>
+   </section>
+   <!-- ACCESO A LA PÁGINA DE CONTACTO -->
+   <section class="form-section padding-xl" id="contact">
+    <div class="section-title">
+     <span class="title-tag">
+      Escr&iacute;benos
+     </span>
+     <h2>
+      Consultas y reservas
+     </h2>
+    </div>
+    <p class="form-note">
+     Consulta por nuestras bebidas o prueba el formulario de reservas.
+    </p>
+    <div class="section-action"><a class="btn-primary" href="contacto.html#formulario">Ir al formulario de contacto</a></div>
+   </section>
+  </main>
+  <!-- SECCION 8: FOOTER -->
+  <footer class="footer">
+   <div class="footer-container footer-bar row">
+    <div class="footer-col">
+     <h3>
+      Cont&aacute;ctanos
+     </h3>
+     <p>
+      <i class="fa-solid fa-location-dot">
+      </i>
+      Ubicación referencial: Real Plaza Salaverry, Lima
+     </p>
+     <p>
+      <i class="fa-solid fa-envelope">
+      </i>
+      Correo:
+      <a href="mailto:foodily@gmail.com?subject=Consulta%20Foodily">
+       foodily@gmail.com
+      </a>
+     </p>
+     <p>
+      <i class="fa-solid fa-phone">
+      </i>
+      Tel&eacute;fono:
+      <a href="tel:+51999666123">
+       +51 999 666 123
+      </a>
+     </p>
+    </div>
+    <div class="footer-col">
+     <h3>
+      Enlaces &uacute;tiles
+     </h3>
+     <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+     </ul>
+    </div>
+    <div class="footer-col">
+     <h3>
+      Enlaces de contacto
+     </h3>
+     <div class="footer-socials">
+      <a href="mailto:foodily@gmail.com?subject=Consulta%20Foodily">
+       <i class="fa-solid fa-envelope">
+       </i>
+       Correo
+      </a>
+      <br/>
+      <a href="tel:+51999666123">
+       <i class="fa-solid fa-phone">
+       </i>
+       Tel&eacute;fono
+      </a>
+      <br/>
+      <a href="https://wa.me/51999666123" rel="noopener noreferrer" target="_blank">
+       <i class="fa-brands fa-whatsapp">
+       </i>
+       WhatsApp
+      </a>
+     </div>
+    </div>
+   </div>
+   <div class="footer-bottom">
+    <p>
+     &copy; 2026 Foodily. Todos los derechos reservados.
+    </p>
+    <p>
+    Proyecto académico APF3. Datos de contacto, dirección y precios referenciales de demostración.
+    </p>
+   </div>
+  </footer>
+
+  <!-- Boton fijo para volver al inicio -->
+  <button type="button" class="scroll-up" aria-label="Ir arriba" title="Ir arriba" hidden>
+      <span aria-hidden="true">↑</span>
+  </button>
+
+<!-- JavaScript principal -->
+    <script src="assets/js/main.js"></script>
+
+ </body>
+</html>
